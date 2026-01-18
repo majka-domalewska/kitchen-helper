@@ -8,7 +8,7 @@ import { signal } from '@angular/core';
   selector: 'app-login',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './login.html',
+  templateUrl: './login.component.html',
 })
 export class LoginComponent implements OnInit {
   private authService = inject(AuthService);

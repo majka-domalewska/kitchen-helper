@@ -5,8 +5,8 @@ import { CommonModule } from '@angular/common';
   selector: 'app-landing',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './landing.html',
-  styleUrl: './landing.css',
+  templateUrl: './landing.component.html',
+  styleUrls: [],
 })
 export class LandingComponent implements OnInit {
   groceries = signal([
