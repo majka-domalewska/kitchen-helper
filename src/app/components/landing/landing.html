@@ -1,0 +1,27 @@
+<div class="page text-white max-w-9/12 max-h-9/12 scroll-auto mx-auto gap-8 py-8 grid grid-cols-2">
+  <div class="space-y-6">
+    <h2>Groceries</h2>
+    <ul class="space-y-3">
+      @for (item of groceries(); track $index) {
+        <li
+          class="overflow-hidden rounded-md bg-white px-6 py-4 shadow-sm dark:bg-gray-800/50 dark:shadow-none dark:outline dark:-outline-offset-1 dark:outline-white/10"
+        >
+          {{ item.name }} ({{ item.quantity }})
+        </li>
+      }
+    </ul>
+  </div>
+
+  <div class="space-y-6">
+    <h2>Owned</h2>
+    <ul class="space-y-3">
+      @for (item of ownedIngredients(); track $index) {
+        <li
+          class="overflow-hidden rounded-md bg-white px-6 py-4 shadow-sm dark:bg-gray-800/50 dark:shadow-none dark:outline dark:-outline-offset-1 dark:outline-white/10"
+        >
+          {{ item.name }} ({{ item.quantity }})
+        </li>
+      }
+    </ul>
+  </div>
+</div>
